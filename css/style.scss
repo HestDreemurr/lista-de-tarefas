@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+
+// Variáveis
+$verde: #b2f7b1;
+$verde-escuro: #285728;
+
+// Global
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: $verde;
+  margin: 15px;
+}
+
+h1 {
+  color: $verde-escuro;
+  text-align: center;
+  padding: 15px;
+}
+
+section#app {
+  max-width: 600px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin: auto;
+  box-shadow: 2px 2px 3px #0000004a;
+  
+  #principal {
+    display: flex;
+    align-items: center;
+  }
+  
+  input#tarefa {
+    width: 88%;
+    height: 30px;
+    margin-right: 10px;
+    padding: 15px;
+    border: none;
+    border-bottom: 2px solid $verde-escuro;
+    outline: none;
+  }
+  
+  input#tarefa:focus {
+    border: 2px solid $verde-escuro;
+    border-radius: 5px;
+  }
+  
+  button#add {
+    font-size: 10px;
+    height: 30px;
+    background-color: $verde-escuro;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: background-color 0.5s ease;
+    display: inline;
+  }
+  
+  button#add:hover {
+    background-color: white;
+    color: $verde-escuro;
+  }
+  
+  ul {
+    list-style: none;
+    margin-top: 20px;
+    
+    li.tarefa {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      border: 1px solid #00000090;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      
+      span.deletar {
+        background-color: $verde-escuro;
+        padding: 5px;
+        border-radius: 5px;
+        color: white;
+        transition: background-color 0.3s ease;
+      }
+      
+      span.deletar:hover {
+        background-color: #dc3545;
+      }
+    }
+  }
+}
