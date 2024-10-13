@@ -1,9 +1,14 @@
 @charset "UTF-8";
 
+/* Fonte Montserrat */
+@import
+url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 // Variáveis
 $verde: #b2f7b1;
 $verde-escuro: #285728;
+$vermelho: #dc3545;
 
 // Global
 * {
@@ -15,6 +20,7 @@ $verde-escuro: #285728;
 
 body {
   background-color: $verde;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
   margin: 15px;
 }
 
@@ -90,7 +96,7 @@ section#app {
       }
       
       span.deletar:hover {
-        background-color: #dc3545;
+        background-color: $vermelho;
       }
     }
   }
